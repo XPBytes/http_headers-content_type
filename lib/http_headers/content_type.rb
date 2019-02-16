@@ -1,9 +1,8 @@
+require 'http_headers/content_type/version'
 require 'http_headers/utils/single'
 
 module HttpHeaders
   module ContentType
-    VERSION = '0.1.0'
-
     class << self
       def new(value)
         Utils::Single.new(value, entry_klazz: Entry)
